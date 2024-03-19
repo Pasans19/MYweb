@@ -1,7 +1,14 @@
+import Navbar from "../../Component/Molecules/Navbar/navbar";
+
+import Blog from "../../Component/Molecules/Gamespost/blog";
+
 const Game=()=>{
     return(
         <div>
-            <h1>Game</h1>
+            <Navbar/>
+            <Blog/>
+            
+            
         </div>
     )
 }

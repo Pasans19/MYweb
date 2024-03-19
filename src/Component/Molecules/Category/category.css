@@ -1,0 +1,60 @@
+/* Styles for the creative-design-container */
+.creative-design-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 20px;
+}
+
+/* Styles for the image-wrapper */
+.image-wrapper {
+  position: relative;
+  width: 300px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+/* Styles for the image */
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Styles for the overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Styles for the overlay when hovering */
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+/* Styles for the overlay text */
+.overlay-text {
+  color: #ffffff; /* Text color */
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* Styles for the overlay description */
+.overlay-description {
+  color: #ffffff; /* Text color */
+  font-size: 16px; /* Adjust font size as needed */
+  text-align: center;
+}
